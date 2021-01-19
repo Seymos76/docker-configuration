@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+
+  php-fpm:
+    container_name: php-fpm
+    build: 
+      context: .
+    ports:
+      - 5000:8888
+    volumes:
+      - ./:/var/www/html
